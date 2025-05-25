@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Histoire - Mon Parcours</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/mobile.css" media="(max-width: 768px)">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+                <h1>Mon Histoire</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/pages/index.html">Accueil</a></li>
+                <li><a href="/pages/histoire.html" class="active">Mon Histoire</a></li>
+                <li><a href="/pages/bandjoun.html">Bandjoun</a></li>
+                <li><a href="/pages/bafoussam.html">Bafoussam</a></li>
+                <li><a href="/pages/batoufam.html">Batoufam</a></li>
+                <li><a href="/pages/contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="story-hero">
+            <div class="container">
+                <h1>Mon Histoire</h1>
+                <p class="subtitle">Un voyage à travers mes racines</p>
+            </div>
+        </section>
+
+        <section class="story-content">
+            <div class="container">
+                <article class="story-section">
+                    <h2>Mes Origines</h2>
+                    <p>Né à Bandjoun, j'ai grandi à Bafoussam et mes racines ancestrales plongent dans le village de Batoufam. Ces trois lieux ont façonné mon identité et ma vision du monde.</p>
+                </article>
+
+                <article class="story-section">
+                    <h2>Mon Parcours</h2>
+                    <p>De mon enfance à Bafoussam jusqu'à mes retours réguliers à Batoufam, chaque lieu a joué un rôle crucial dans mon développement personnel et culturel.</p>
+                </article>
+
+                <article class="story-section">
+                    <h2>Mes Traditions</h2>
+                    <p>Les traditions bamiléké, transmises de génération en génération, sont au cœur de mon identité. Elles continuent d'influencer ma vie quotidienne et mes valeurs.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Mon Histoire - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script>
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav-links');
+        
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+            burger.classList.toggle('toggle');
+        });
+    </script>
+</body>
+</html> 

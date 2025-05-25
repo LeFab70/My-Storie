@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bafoussam - Ma Ville d'Enfance</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/mobile.css" media="(max-width: 768px)">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+                <h1>Mon Histoire</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/pages/index.html">Accueil</a></li>
+                <li><a href="/pages/histoire.html">Mon Histoire</a></li>
+                <li><a href="/pages/bandjoun.html">Bandjoun</a></li>
+                <li><a href="/pages/bafoussam.html" class="active">Bafoussam</a></li>
+                <li><a href="/pages/batoufam.html">Batoufam</a></li>
+                <li><a href="/pages/contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="city-hero">
+            <div class="container">
+                <h1>Bafoussam</h1>
+                <p class="subtitle">Ma ville d'enfance</p>
+            </div>
+        </section>
+
+        <div class="main-content">
+            <section class="city-content">
+                <article class="city-section">
+                    <h2>La Capitale de l'Ouest</h2>
+                    <p>Bafoussam, capitale de la région de l'Ouest Cameroun, est une ville dynamique où j'ai passé mon enfance. Cette ville en perpétuel développement m'a offert une éducation et des expériences qui ont façonné ma personnalité.</p>
+                    <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800" alt="Vue de Bafoussam" class="section-image">
+                </article>
+
+                <article class="city-section">
+                    <h2>Mes Souvenirs d'Enfance</h2>
+                    <p>Les rues animées de Bafoussam, ses marchés colorés et ses quartiers traditionnels sont le décor de mes plus beaux souvenirs d'enfance. C'est ici que j'ai appris les valeurs de la communauté et l'importance de nos traditions.</p>
+                    <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800" alt="Marché de Bafoussam" class="section-image">
+                </article>
+
+                <article class="city-section">
+                    <h2>La Vie Quotidienne</h2>
+                    <p>La vie à Bafoussam est rythmée par les activités du marché central, les cérémonies traditionnelles et les rencontres familiales. Cette ville est un véritable creuset culturel où se mêlent modernité et traditions.</p>
+                    <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800" alt="Vie quotidienne" class="section-image">
+                </article>
+
+                <div class="image-gallery">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800" alt="Marché Central de Bafoussam">
+                        <p>Le Marché Central</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800" alt="Vue de Bafoussam">
+                        <p>Vue Panoramique de la Ville</p>
+                    </div>
+                </div>
+            </section>
+
+            <aside>
+                <div class="aside-section">
+                    <h3>À Propos de Bafoussam</h3>
+                    <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=400" alt="Bafoussam" class="aside-image">
+                    <p>Bafoussam est la capitale de la région de l'Ouest Cameroun, située à environ 250 km de Yaoundé. C'est une ville moderne qui préserve ses traditions.</p>
+                </div>
+
+                <div class="aside-section">
+                    <h3>Points d'Intérêt</h3>
+                    <ul>
+                        <li>Le Marché Central</li>
+                        <li>Le Stade Municipal</li>
+                        <li>Les Quartiers Traditionnels</li>
+                        <li>Les Restaurants Locaux</li>
+                    </ul>
+                </div>
+
+                <div class="aside-section">
+                    <h3>Culture et Traditions</h3>
+                    <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=400" alt="Culture locale" class="aside-image">
+                    <p>La ville est un mélange parfait de modernité et de traditions, où les cérémonies traditionnelles côtoient les activités urbaines.</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Mon Histoire - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script>
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav-links');
+        
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+            burger.classList.toggle('toggle');
+        });
+    </script>
+</body>
+</html> 

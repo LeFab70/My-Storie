@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandjoun - Mon Lieu de Naissance</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/mobile.css" media="(max-width: 768px)">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+                <h1>Mon Histoire</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/pages/index.html">Accueil</a></li>
+                <li><a href="/pages/histoire.html">Mon Histoire</a></li>
+                <li><a href="/pages/bandjoun.html" class="active">Bandjoun</a></li>
+                <li><a href="/pages/bafoussam.html">Bafoussam</a></li>
+                <li><a href="/pages/batoufam.html">Batoufam</a></li>
+                <li><a href="/pages/contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="city-hero">
+            <div class="container">
+                <h1>Bandjoun</h1>
+                <p class="subtitle">Le lieu de ma naissance</p>
+            </div>
+        </section>
+
+        <div class="main-content">
+            <section class="city-content">
+                <article class="city-section">
+                    <h2>Une Ville Historique</h2>
+                    <p>Bandjoun est une ville importante de la région de l'Ouest Cameroun, connue pour sa riche histoire et ses traditions. C'est ici que j'ai vu le jour, dans un environnement où se mêlent modernité et traditions ancestrales.</p>
+                    <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800" alt="Vue de Bandjoun" class="section-image">
+                </article>
+
+                <article class="city-section">
+                    <h2>Le Palais Royal</h2>
+                    <p>Le Palais Royal de Bandjoun est un symbole majeur de la ville. Cette architecture traditionnelle bamiléké témoigne de la grandeur de notre culture et de notre histoire. Les sculptures et les motifs qui ornent le palais racontent des histoires de notre peuple.</p>
+                    <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800" alt="Palais Royal de Bandjoun" class="section-image">
+                </article>
+
+                <article class="city-section">
+                    <h2>La Culture et les Traditions</h2>
+                    <p>Bandjoun est réputée pour ses festivals traditionnels, ses danses et sa musique. Les cérémonies et les rituels qui s'y déroulent sont des moments forts de notre culture, où se perpétuent les traditions de génération en génération.</p>
+                    <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800" alt="Festival traditionnel" class="section-image">
+                </article>
+
+                <div class="image-gallery">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800" alt="Palais Royal de Bandjoun">
+                        <p>Le Palais Royal de Bandjoun</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800" alt="Marché de Bandjoun">
+                        <p>Le Marché Traditionnel</p>
+                    </div>
+                </div>
+            </section>
+
+            <aside>
+                <div class="aside-section">
+                    <h3>À Propos de Bandjoun</h3>
+                    <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=400" alt="Bandjoun" class="aside-image">
+                    <p>Bandjoun est une ville historique située dans les hauts plateaux de l'Ouest Cameroun, à environ 300 km de Yaoundé.</p>
+                </div>
+
+                <div class="aside-section">
+                    <h3>Points d'Intérêt</h3>
+                    <ul>
+                        <li>Le Palais Royal</li>
+                        <li>Le Musée des Arts et Traditions</li>
+                        <li>Le Marché Central</li>
+                        <li>Les Chutes de Bandjoun</li>
+                    </ul>
+                </div>
+
+                <div class="aside-section">
+                    <h3>Culture Locale</h3>
+                    <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=400" alt="Culture locale" class="aside-image">
+                    <p>La ville est connue pour ses danses traditionnelles et ses festivals culturels qui attirent des visiteurs du monde entier.</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Mon Histoire - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script>
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav-links');
+        
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+            burger.classList.toggle('toggle');
+        });
+    </script>
+</body>
+</html> 

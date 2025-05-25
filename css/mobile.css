@@ -1,0 +1,273 @@
+/* Styles spécifiques pour mobile */
+.main-nav {
+    padding: 1rem;
+    background: var(--gradient-1);
+}
+
+.logo h1 {
+    font-size: 1.2rem;
+}
+
+/* Burger menu styles */
+.burger {
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--white);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Navigation mobile */
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+}
+
+.nav-links li {
+    width: 100%;
+    text-align: center;
+}
+
+.nav-links a {
+    display: block;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 0.2rem 0;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background: var(--secondary-color);
+}
+
+/* Hero section mobile */
+.hero {
+    height: 70vh;
+    padding-top: 60px;
+}
+
+.hero-content h1 {
+    font-size: 2rem;
+}
+
+/* Grid container mobile */
+.grid-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+/* Animation du burger menu */
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Ajustements des espacements */
+.intro {
+    padding: 3rem 1rem;
+}
+
+.grid-item {
+    padding: 1.5rem;
+}
+
+/* Footer mobile */
+footer {
+    padding: 1rem;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    /* Navigation */
+    .main-nav {
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        background: var(--gradient-1);
+    }
+
+    .logo {
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 0;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 0.8rem;
+        font-size: 1.1rem;
+        border-radius: 5px;
+        background: rgba(255, 255, 255, 0.1);
+        margin: 0.2rem 0;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+        background: var(--secondary-color);
+    }
+
+    /* Suppression des styles du burger menu */
+    .burger {
+        display: none;
+    }
+
+    /* Ajustements du contenu principal */
+    .main-content {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+
+    /* Hero section */
+    .hero,
+    .origins-hero,
+    .passions-hero,
+    .cuisine-hero,
+    .contact-hero {
+        height: auto;
+        min-height: 50vh;
+        padding: 6rem 1rem 3rem;
+    }
+
+    .hero-content {
+        padding: 2rem;
+        margin: 0 1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Grilles et sections */
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .image-gallery {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .recipe-details {
+        grid-template-columns: 1fr;
+    }
+
+    .section-image {
+        height: 250px;
+    }
+
+    /* Aside sections */
+    .aside-section {
+        margin: 1rem 0;
+    }
+
+    /* Contact page */
+    .contact-content {
+        padding: 1rem;
+    }
+
+    .contact-form {
+        padding: 1.5rem;
+    }
+
+    .social-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.8rem;
+    }
+
+    .social-link {
+        flex: 1;
+        min-width: 140px;
+        justify-content: center;
+    }
+
+    footer {
+        padding: 2rem 1rem 1rem;
+    }
+
+    .footer-links {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .footer-section h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-section ul li a:hover {
+        padding-left: 0;
+        color: var(--secondary-color);
+    }
+
+    .footer-bottom {
+        padding-top: 1.5rem;
+    }
+}
+
+/* Small Mobile Devices */
+@media screen and (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .section-image {
+        height: 200px;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+        padding: 0.7rem;
+    }
+
+    .social-link {
+        min-width: 120px;
+    }
+} 
