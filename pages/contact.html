@@ -24,6 +24,7 @@ But : Page de contact permettant aux visiteurs de me contacter via un formulaire
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
+    <!--lien vers la fontawesome pour les icones-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -76,7 +77,13 @@ But : Page de contact permettant aux visiteurs de me contacter via un formulaire
 
       <div class="main-content">
         <section class="contact-content">
-          <form class="contact-form" id="contactForm">
+          <form
+            class="contact-form"
+            id="contactForm"
+            method="post"
+            enctype="text/plain"
+            action="mailto:ekfabric01@monccnb.ca?subject=Avoir%20plus%20d'informations&body=Merci%20de%20me%20contacter"
+          >
             <div class="form-group">
               <label for="name">Nom complet</label>
               <input type="text" id="name" name="name" required />
@@ -98,6 +105,9 @@ But : Page de contact permettant aux visiteurs de me contacter via un formulaire
                 required
               ></textarea>
             </div>
+            <div class="form-group">
+                <span class="required">* Champs obligatoires</span>
+            </div>
             <button type="submit" class="btn">Envoyer le message</button>
           </form>
         </section>
@@ -110,15 +120,15 @@ But : Page de contact permettant aux visiteurs de me contacter via un formulaire
           </div>
 
           <div class="social-links">
-            <a href="#" class="social-link">
+            <a href="https://www.facebook.com/fab.kouonang" class="social-link" title="Me contacter sur Facebook" target="_blank">
               <i class="fab fa-facebook"></i>
               <span>Facebook</span>
             </a>
-            <a href="#" class="social-link">
+            <a href="https://www.linkedin.com/in/fabrice-kouonang/" class="social-link " title="Me contacter sur LinkedIn" target="_blank">
               <i class="fab fa-linkedin"></i>
               <span>LinkedIn</span>
             </a>
-            <a href="#" class="social-link">
+            <a href="https://api.whatsapp.com/send?phone=14389855417" class="social-link" title="Me contacter sur WhatsApp" target="_blank">
               <i class="fab fa-whatsapp"></i>
               <span>WhatsApp</span>
             </a>
