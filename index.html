@@ -1,129 +1,252 @@
 <!--
 Auteur : Fabrice Kouonang
-Date : 2024-05-20
+Date : 2024-05-23
 But : Page d'accueil présentant une introduction personnelle et les différentes sections du site
 -->
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bienvenue sur le site personnel de Fabrice Kouonang, étudiant en programmation mobile au CCNB Bathurst. Découvrez mes origines, passions et recettes africaines.">
-    <meta name="keywords" content="Fabrice Kouonang, CCNB Bathurst, programmation mobile, origines camerounaises, cuisine africaine, jeux vidéo, football">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Bienvenue sur le site personnel de Fabrice Kouonang, étudiant en programmation mobile au CCNB Bathurst. Découvrez mes origines, passions et recettes africaines."
+    />
+    <meta
+      name="keywords"
+      content="Fabrice Kouonang, CCNB Bathurst, programmation mobile, origines camerounaises, cuisine africaine, jeux vidéo, football"
+    />
     <title>Bienvenue - Mon Histoire</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/mobile.css" media="(max-width: 768px)">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/css/style.css" />
+    <!--Sytle applicable des que le mode mobile est activé-->
+    <link rel="stylesheet" href="/css/mobile.css" media="(max-width: 768px)" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <header>
-        <nav class="main-nav">
-            <div class="logo">
-                <h1>Mon Histoire</h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="/index.html" class="active" title="Retour à l'accueil">Accueil</a></li>
-                <li><a href="/pages/origines.html" title="Découvrir mes origines">Mes Origines</a></li>
-                <li><a href="/pages/passions.html" title="Explorer mes passions">Mes Passions</a></li>
-                <li><a href="/pages/cuisine.html" title="Découvrir ma cuisine">Ma Cuisine</a></li>
-                <li><a href="/pages/contact.html" title="Me contacter">Contact</a></li>
-            </ul>
-        </nav>
+      <nav class="main-nav">
+        <div class="logo">
+          <img
+            src="./images/leFab.jpeg"
+            alt="Le Fab logo"
+            title="Logo de Fabrice Kouonang"
+          />
+          <h1>Mon Histoire</h1>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="/index.html" class="active" title="Retour à l'accueil"
+              >Accueil</a
+            >
+          </li>
+          <li>
+            <a href="/pages/origines.html" title="Découvrir mes origines"
+              >Mes Origines</a
+            >
+          </li>
+          <li>
+            <a href="/pages/passions.html" title="Explorer mes passions"
+              >Mes Passions</a
+            >
+          </li>
+          <li>
+            <a href="/pages/cuisine.html" title="Découvrir ma cuisine"
+              >Ma Cuisine</a
+            >
+          </li>
+          <li>
+            <a href="/pages/contact.html" title="Me contacter">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Bienvenue sur Mon Histoire</h1>
-                <p class="subtitle">Découvrez mon parcours, mes origines et mes passions</p>
-                <div class="hero-description">
-                    <p>Je suis Fabrice Kouonang, étudiant en première année de programmation mobile au CCNB Bathurst et résident à Campbellton dans le Nouveau-Brunswick.</p>
-                </div>
-            </div>
-        </section>
+      <section class="hero bg">
+        <div class="hero-content">
+          <h1>Bienvenue sur Mon Histoire</h1>
+          <p class="subtitle">
+            Découvrez mon parcours, mes origines et mes passions
+          </p>
+          <div class="hero-description">
+            <p>
+              Je suis Fabrice Kouonang, étudiant en première année de
+              programmation mobile au CCNB Bathurst et résident<br />
+              à Campbellton dans le Nouveau-Brunswick.
+            </p>
+            <img
+              src="./images/leFab.jpeg"
+              alt="Le Fab logo"
+              title="Logo de Fabrice Kouonang"
+            />
+          </div>
+        </div>
+      </section>
 
-        <section class="intro">
-            <div class="container">
-                <h2>Qui suis-je ?</h2>
-                <div class="grid-container">
-                    <div class="grid-item">
-                        <i class="fas fa-map-marker-alt fa-3x"></i>
-                        <h3>Mes Origines</h3>
-                        <p>Né à Bandjoun, j'ai grandi à Bafoussam et mes racines ancestrales plongent dans le village de Batoufam. Ces trois lieux ont façonné mon identité.</p>
-                        <a href="/pages/origines.html" class="btn">Découvrir</a>
-                    </div>
-                    <div class="grid-item">
-                        <i class="fas fa-utensils fa-3x"></i>
-                        <h3>Ma Passion pour la Cuisine</h3>
-                        <p>La cuisine africaine est mon art préféré. Je prends plaisir à préparer des plats traditionnels et à les partager avec ma famille.</p>
-                        <a href="/pages/cuisine.html" class="btn">Explorer</a>
-                    </div>
-                    <div class="grid-item">
-                        <i class="fas fa-gamepad fa-3x"></i>
-                        <h3>Mes Loisirs</h3>
-                        <p>Entre les parties de jeux vidéo en famille, le football et les moments partagés, je trouve mon équilibre dans ces activités qui me ressourcent.</p>
-                        <a href="/pages/passions.html" class="btn">En savoir plus</a>
-                    </div>
-                </div>
+      <section class="intro">
+        <div class="container">
+          <h2>Qui suis-je ?</h2>
+          <div class="grid-container">
+            <div class="grid-item">
+              <i class="fas fa-map-marker-alt fa-3x"></i>
+              <h3>Mes Origines</h3>
+              <p>
+                Né à Bandjoun, j'ai grandi à Bafoussam et mes racines
+                ancestrales plongent dans le village de Batoufam. Ces trois
+                lieux ont façonné mon identité.
+              </p>
+              <a href="/pages/origines.html" class="btn">Découvrir</a>
             </div>
-        </section>
+            <div class="grid-item">
+              <i class="fas fa-utensils fa-3x"></i>
+              <h3>Ma Passion pour la Cuisine</h3>
+              <p>
+                La cuisine africaine est mon art préféré. Je prends plaisir à
+                préparer des plats traditionnels et à les partager avec ma
+                famille.
+              </p>
+              <a href="/pages/cuisine.html" class="btn">Explorer</a>
+            </div>
+            <div class="grid-item">
+              <i class="fas fa-gamepad fa-3x"></i>
+              <h3>Mes Loisirs</h3>
+              <p>
+                Entre les parties de jeux vidéo en famille, le football et les
+                moments partagés, je trouve mon équilibre dans ces activités qui
+                me ressourcent.
+              </p>
+              <a href="/pages/passions.html" class="btn">En savoir plus</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section class="featured-content">
-            <div class="container">
-                <h2>Mes Moments Préférés</h2>
-                <div class="image-gallery">
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800" alt="Cuisine africaine">
-                        <p>La Cuisine Traditionnelle</p>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800" alt="Jeux en famille">
-                        <p>Jeux en Famille</p>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800" alt="Football">
-                        <p>Le Football</p>
-                    </div>
-                </div>
+      <section class="featured-content">
+        <div class="container">
+          <h2>Mes Moments Préférés</h2>
+          <div class="image-gallery">
+            <div class="gallery-item">
+              <img src="./images/taroAcceuil.jpg" alt="Cuisine africaine" />
+              <span
+                ><a
+                  href="https://media.istockphoto.com/id/1040928762/photo/hands-of-cameroonian-woman-holding-pot-of-traditional-taro-with-sauce-jaune-dish-in-african.jpg?s=2048x2048&w=is&k=20&c=2uI9i1r5ablfWzAs-RfO8TOYVZ2ECoXbwHPbn2Mq3sA="
+                  title="source image"
+                  target="_blank"
+                  >source image ici</a
+                ></span
+              >
+              <p>La Cuisine Traditionnelle</p>
             </div>
-        </section>
+            <div class="gallery-item">
+              <img src="./images/jeu_famille.jpg" alt="Jeux en famille" />
+              <span
+                ><a
+                  href="https://media.istockphoto.com/id/1271510993/photo/close-up-of-hispanic-father-and-son-sitting-on-floor-at-home-playing-video-game-together.jpg?s=2048x2048&w=is&k=20&c=acqu5etXvim58R9Ol2FzK0VgowowLbWnUizdUkh7CmU="
+                  title="source image"
+                  target="_blank"
+                  >source image ici</a
+                ></span
+              >
+
+              <p>Jeux en Famille</p>
+            </div>
+            <div class="gallery-item">
+              <img src="./images/football_accueil.avif" alt="Football" />
+
+              <span
+                ><a
+                  href="https://unsplash.com/fr/photos/person-playing-soccer-mY2ZHBU6GRk
+                "
+                  title="source image"
+                  target="_blank"
+                  >source image ici</a
+                ></span
+              >
+              <p>Le Football</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <div class="footer-content">
-            <div class="footer-links">
-                <div class="footer-section">
-                    <h3>Navigation</h3>
-                    <ul>
-                        <li><a href="/index.html" title="Retour à l'accueil">Accueil</a></li>
-                        <li><a href="/pages/origines.html" title="Découvrir mes origines">Mes Origines</a></li>
-                        <li><a href="/pages/passions.html" title="Explorer mes passions">Mes Passions</a></li>
-                        <li><a href="/pages/cuisine.html" title="Découvrir ma cuisine">Ma Cuisine</a></li>
-                        <li><a href="/pages/contact.html" title="Me contacter">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Liens Utiles</h3>
-                    <ul>
-                        <li><a href="https://tourismeouestcameroun.com/" target="_blank" title="Découvrir le tourisme de l'Ouest Cameroun">Tourisme Ouest Cameroun</a></li>
-                        <li><a href="https://routedeschefferies.com/destinations/case-patrimoniale-de-batoufam-architecture-pouvoir-et-cohesion-sociale/" target="_blank" title="Visiter la Chefferie de Batoufam">Chefferie de Batoufam</a></li>
-                        <li><a href="https://fr.wikipedia.org/wiki/P%C3%A8te-Bandjoun" target="_blank" title="En savoir plus sur Bandjoun">Bandjoun</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Contact</h3>
-                    <ul>
-                        <li>Téléphone: 438 985 5417</li>
-                        <li>Email: ekfabric01@monccnb.ca</li>
-                        <li>Campbellton, NB</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; Juin 2025 Fabrice Kouonang. Tous droits réservés.</p>
-            </div>
+      <div class="footer-content">
+        <div class="footer-links">
+          <div class="footer-section">
+            <h3>Navigation</h3>
+            <ul>
+              <li>
+                <a href="/index.html" title="Retour à l'accueil">Accueil</a>
+              </li>
+              <li>
+                <a href="/pages/origines.html" title="Découvrir mes origines"
+                  >Mes Origines</a
+                >
+              </li>
+              <li>
+                <a href="/pages/passions.html" title="Explorer mes passions"
+                  >Mes Passions</a
+                >
+              </li>
+              <li>
+                <a href="/pages/cuisine.html" title="Découvrir ma cuisine"
+                  >Ma Cuisine</a
+                >
+              </li>
+              <li>
+                <a href="/pages/contact.html" title="Me contacter">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Liens Utiles</h3>
+            <ul>
+              <li>
+                <a
+                  href="https://tourismeouestcameroun.com/"
+                  target="_blank"
+                  title="Découvrir le tourisme de l'Ouest Cameroun"
+                  >Tourisme Ouest Cameroun</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://routedeschefferies.com/destinations/case-patrimoniale-de-batoufam-architecture-pouvoir-et-cohesion-sociale/"
+                  target="_blank"
+                  title="Visiter la Chefferie de Batoufam"
+                  >Chefferie de Batoufam</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://fr.wikipedia.org/wiki/P%C3%A8te-Bandjoun"
+                  target="_blank"
+                  title="En savoir plus sur Bandjoun"
+                  >Bandjoun</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Contact</h3>
+            <ul>
+              <li>Téléphone: 438 985 5417</li>
+              <li>Email: ekfabric01@monccnb.ca</li>
+              <li>Campbellton, NB</li>
+            </ul>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>&copy; Juin 2025 Fabrice Kouonang. Tous droits réservés.</p>
+        </div>
+      </div>
     </footer>
-</body>
-</html> 
+  </body>
+</html>

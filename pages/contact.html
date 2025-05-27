@@ -1,143 +1,219 @@
 <!--
 Auteur : Fabrice Kouonang
-Date : 2024-05-20
+Date : 2024-05-26
 But : Page de contact permettant aux visiteurs de me contacter via un formulaire ou mes coordonnées directes
 -->
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contactez Fabrice Kouonang, étudiant en programmation mobile au CCNB Bathurst. Formulaire de contact, coordonnées et horaires de disponibilité.">
-    <meta name="keywords" content="contact, Fabrice Kouonang, CCNB Bathurst, programmation mobile, Campbellton, Nouveau-Brunswick">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contactez Fabrice Kouonang, étudiant en programmation mobile au CCNB Bathurst. Formulaire de contact, coordonnées et horaires de disponibilité."
+    />
+    <meta
+      name="keywords"
+      content="contact, Fabrice Kouonang, CCNB Bathurst, programmation mobile, Campbellton, Nouveau-Brunswick"
+    />
     <title>Contact - Mon Histoire</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/mobile.css" media="(max-width: 768px)">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/css/style.css" />
+    <!--Sytle applicable des que le mode mobile est activé-->
+    <link rel="stylesheet" href="/css/mobile.css" media="(max-width: 768px)" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <header>
-        <nav class="main-nav">
-            <div class="logo">
-                <h1>Mon Histoire</h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="/index.html" title="Retour à l'accueil">Accueil</a></li>
-                <li><a href="/pages/origines.html" title="Découvrir mes origines">Mes Origines</a></li>
-                <li><a href="/pages/passions.html" title="Explorer mes passions">Mes Passions</a></li>
-                <li><a href="/pages/cuisine.html" title="Découvrir ma cuisine">Ma Cuisine</a></li>
-                <li><a href="/pages/contact.html" class="active" title="Me contacter">Contact</a></li>
-            </ul>
-        </nav>
+      <nav class="main-nav">
+        <div class="logo">
+          <img
+            src="../images/leFab.jpeg"
+            alt="Le Fab logo"
+            title="Logo de Fabrice Kouonang"
+          />
+          <h1>Mon Histoire</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="/index.html" title="Retour à l'accueil">Accueil</a></li>
+          <li>
+            <a href="/pages/origines.html" title="Découvrir mes origines"
+              >Mes Origines</a
+            >
+          </li>
+          <li>
+            <a href="/pages/passions.html" title="Explorer mes passions"
+              >Mes Passions</a
+            >
+          </li>
+          <li>
+            <a href="/pages/cuisine.html" title="Découvrir ma cuisine"
+              >Ma Cuisine</a
+            >
+          </li>
+          <li>
+            <a href="/pages/contact.html" class="active" title="Me contacter"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section class="contact-hero">
-            <div class="hero-content">
-                <h1>Contactez-moi</h1>
-                <p class="subtitle">Je serai ravi d'échanger avec vous</p>
+      <section class="contact-hero">
+        <div class="container">
+          <h1>Contactez-moi</h1>
+          <p class="subtitle">Je serai ravi d'échanger avec vous</p>
+        </div>
+      </section>
+
+      <div class="main-content">
+        <section class="contact-content">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Nom complet</label>
+              <input type="text" id="name" name="name" required />
             </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Sujet</label>
+              <input type="text" id="subject" name="subject" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn">Envoyer le message</button>
+          </form>
         </section>
 
-        <div class="main-content">
-            <section class="contact-content">
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Nom complet</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Sujet</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn">Envoyer le message</button>
-                </form>
-            </section>
+        <aside class="contact-info">
+          <div class="contact-details">
+            <p><i class="fas fa-envelope"></i> ekfabric01@monccnb.ca</p>
+            <p><i class="fas fa-phone"></i> +1 (438) 985-5417</p>
+            <p><i class="fas fa-map-marker-alt"></i> Campbellton, NB, Canada</p>
+          </div>
 
-            <aside class="contact-info">
-                <div class="contact-details">
-                    <p><i class="fas fa-envelope"></i> ekfabric01@monccnb.ca</p>
-                    <p><i class="fas fa-phone"></i> +1 (438) 985-5417</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Campbellton, NB, Canada</p>
-                </div>
+          <div class="social-links">
+            <a href="#" class="social-link">
+              <i class="fab fa-facebook"></i>
+              <span>Facebook</span>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fab fa-whatsapp"></i>
+              <span>WhatsApp</span>
+            </a>
+          </div>
 
-                <div class="social-links">
-                    <a href="#" class="social-link">
-                        <i class="fab fa-facebook"></i>
-                        <span>Facebook</span>
-                    </a>
-                    <a href="#" class="social-link">
-                        <i class="fab fa-linkedin"></i>
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="#" class="social-link">
-                        <i class="fab fa-whatsapp"></i>
-                        <span>WhatsApp</span>
-                    </a>
-                </div>
-
-                <div class="response-time">
-                    <h3>Horaires de disponibilité</h3>
-                    <table class="schedule-table">
-                        <tr>
-                            <td>Lundi - Vendredi</td>
-                            <td>8h - 18h</td>
-                        </tr>
-                        <tr>
-                            <td>Samedi</td>
-                            <td>6h - 12h</td>
-                        </tr>
-                        <tr>
-                            <td>Dimanche</td>
-                            <td>Fermé</td>
-                        </tr>
-                    </table>
-                </div>
-            </aside>
-        </div>
+          <div class="response-time">
+            <h3>Horaires de disponibilité</h3>
+            <table class="schedule-table">
+              <tr>
+                <td>Lundi - Vendredi</td>
+                <td>8h - 18h</td>
+              </tr>
+              <tr>
+                <td>Samedi</td>
+                <td>6h - 12h</td>
+              </tr>
+              <tr>
+                <td>Dimanche</td>
+                <td>Fermé</td>
+              </tr>
+            </table>
+          </div>
+        </aside>
+      </div>
     </main>
 
     <footer>
-        <div class="footer-links">
-            <div class="footer-section">
-                <h3>Navigation</h3>
-                <ul>
-                    <li><a href="/index.html" title="Retour à l'accueil">Accueil</a></li>
-                    <li><a href="/pages/origines.html" title="Découvrir mes origines">Mes Origines</a></li>
-                    <li><a href="/pages/passions.html" title="Explorer mes passions">Mes Passions</a></li>
-                    <li><a href="/pages/cuisine.html" title="Découvrir ma cuisine">Ma Cuisine</a></li>
-                    <li><a href="/pages/contact.html" title="Me contacter">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Liens Utiles</h3>
-                <ul>
-                    <li><a href="https://tourismeouestcameroun.com/" target="_blank" title="Découvrir le tourisme de l'Ouest Cameroun">Tourisme Ouest Cameroun</a></li>
-                    <li><a href="https://routedeschefferies.com/destinations/case-patrimoniale-de-batoufam-architecture-pouvoir-et-cohesion-sociale/" target="_blank" title="Visiter la Chefferie de Batoufam">Chefferie de Batoufam</a></li>
-                    <li><a href="https://fr.wikipedia.org/wiki/P%C3%A8te-Bandjoun" target="_blank" title="En savoir plus sur Bandjoun">Bandjoun</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Contact</h3>
-                <ul>
-                    <li>Téléphone: 438 985 5417</li>
-                    <li>Email: ekfabric01@monccnb.ca</li>
-                    <li>Campbellton, NB</li>
-                </ul>
-            </div>
+      <div class="footer-links">
+        <div class="footer-section">
+          <h3>Navigation</h3>
+          <ul>
+            <li>
+              <a href="/index.html" title="Retour à l'accueil">Accueil</a>
+            </li>
+            <li>
+              <a href="/pages/origines.html" title="Découvrir mes origines"
+                >Mes Origines</a
+              >
+            </li>
+            <li>
+              <a href="/pages/passions.html" title="Explorer mes passions"
+                >Mes Passions</a
+              >
+            </li>
+            <li>
+              <a href="/pages/cuisine.html" title="Découvrir ma cuisine"
+                >Ma Cuisine</a
+              >
+            </li>
+            <li>
+              <a href="/pages/contact.html" title="Me contacter">Contact</a>
+            </li>
+          </ul>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; Juin 2025 Fabrice Kouonang. Tous droits réservés.</p>
+        <div class="footer-section">
+          <h3>Liens Utiles</h3>
+          <ul>
+            <li>
+              <a
+                href="https://tourismeouestcameroun.com/"
+                target="_blank"
+                title="Découvrir le tourisme de l'Ouest Cameroun"
+                >Tourisme Ouest Cameroun</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://routedeschefferies.com/destinations/case-patrimoniale-de-batoufam-architecture-pouvoir-et-cohesion-sociale/"
+                target="_blank"
+                title="Visiter la Chefferie de Batoufam"
+                >Chefferie de Batoufam</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://fr.wikipedia.org/wiki/P%C3%A8te-Bandjoun"
+                target="_blank"
+                title="En savoir plus sur Bandjoun"
+                >Bandjoun</a
+              >
+            </li>
+          </ul>
         </div>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <ul>
+            <li>Téléphone: 438 985 5417</li>
+            <li>Email: ekfabric01@monccnb.ca</li>
+            <li>Campbellton, NB</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; Juin 2025 Fabrice Kouonang. Tous droits réservés.</p>
+      </div>
     </footer>
-</body>
-</html> 
+  </body>
+</html>
